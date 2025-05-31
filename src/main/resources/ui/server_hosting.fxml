@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="282.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AppController">
+   <children>
+      <Label layoutX="104.0" layoutY="86.0" text="Server Running: " textAlignment="CENTER" />
+      <Label layoutX="103.0" layoutY="141.0" text="ip: " textAlignment="CENTER" />
+      <Label layoutX="97.0" layoutY="171.0" text="port: " textAlignment="CENTER" />
+      <Label fx:id="server_ip" layoutX="136.0" layoutY="141.0" text="00000: " />
+      <Label fx:id="server_port" layoutX="138.0" layoutY="171.0" text="555" />
+   </children>
+</AnchorPane>
