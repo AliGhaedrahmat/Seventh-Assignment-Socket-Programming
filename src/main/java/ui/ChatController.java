@@ -104,8 +104,6 @@ public class ChatController {
         messageBox.setAlignment(Pos.CENTER_LEFT);
         Label usernameLabel = new Label(username);
         usernameLabel.setTextFill(Color.web("#007691"));
-        usernameLabel.setMinWidth(100);
-        usernameLabel.setMaxWidth(100);
         VBox fileDetails = new VBox(2);
         fileDetails.setAlignment(Pos.CENTER_LEFT);
 
@@ -116,7 +114,7 @@ public class ChatController {
         Label sizeValue = new Label(fileSizeText);
         sizeValue.setFont(Font.font(10));
         sizeValue.setStyle("-fx-text-fill: gray;");
-        Label sizeUnit = new Label("");
+        Label sizeUnit = new Label("File");
         sizeUnit.setFont(Font.font(11));
         sizeUnit.setStyle("-fx-text-fill: gray;");
         sizeBox.getChildren().addAll(sizeValue, sizeUnit);
@@ -131,7 +129,6 @@ public class ChatController {
         HBox fileBox = new HBox(10);
         fileBox.setAlignment(Pos.CENTER_LEFT);
         fileBox.getChildren().addAll(fileDetails, downloadButton);
-        fileBox.setMinWidth(250);
         fileBox.setMaxWidth(250);
         Label dateLabel = new Label(date);
         dateLabel.setTextFill(Color.web("#7e7e7e"));
